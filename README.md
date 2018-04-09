@@ -13,7 +13,7 @@ For GPU
 `pip install tensorflow-gpu`
 
 ---
-***for install opencv***  
+***for installing opencv***  
 this is for `import cv2`  
 `pip install opencv-python`
 
