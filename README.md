@@ -21,7 +21,7 @@ this is for `import cv2`
 
 ***Protobuf Compilation***  
 download protobuf 3.4.0 https://github.com/google/protobuf/releases/tag/v3.4.0  
-I tried version 3.5.0 of protobuf on Windows but it didn't work on me.  
+I tried version 3.5.0 of protobuf on Windows but it didn't work for me.  
 unzip the file, find "bin" open it, copy the "protoc.exe" into the "tensorflow/models/tree/master/research/object_detection" directory  
 open command prompt-->go to the directory where you put "tensorflow/models/.../research/object_detection"-->  
 type: `protoc object_detection/protos/*.proto --python_out=.` this will compile all the .proto files in the protos folder  
