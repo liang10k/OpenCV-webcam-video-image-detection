@@ -102,9 +102,9 @@ with detection_graph.as_default():
                     line_thickness=8)
             cv2.imshow('image',cv2.resize(image_np,(800,600)))
             if cv2.waitKey(25)&0xFF==ord('q'):
-                break
                 cv2.destroyAllWindows()
                 cap.release()
+                break
             
  
   
