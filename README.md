@@ -13,6 +13,11 @@ For GPU
 `pip install tensorflow-gpu`
 
 ---
+***for install opencv***  
+this is for `import cv2`  
+`pip install opencv-python`
+
+---
 
 ***Protobuf Compilation***  
 download protobuf 3.4.0 https://github.com/google/protobuf/releases/tag/v3.4.0  
