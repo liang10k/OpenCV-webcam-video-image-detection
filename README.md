@@ -27,4 +27,8 @@ open command prompt-->go to the directory where you put "tensorflow/models/.../r
 type: `protoc object_detection/protos/*.proto --python_out=.` this will compile all the .proto files in the protos folder  
 
 ---
-Then you can run the "webcam_detection.py"
+Then you can run the "webcam_detection.py"  
+
+---
+If you need other Tensorflow detection models, here is the link:  
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
