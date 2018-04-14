@@ -11,3 +11,19 @@ Requirements:
   *Yolov2 608x608.weights file: https://pjreddie.com/media/files/yolov2.weights (You can try other weighs as well)  
   *put the weights file into `D:\darkflow-master\bin`, you need creat the **bin** folder. The folder name doesn't matter.  
   
+---
+## How to train your own model(not your dragon)
+
+1. Find `tiny-yolo-voc.cfg` in your directory i.e. `D:\darkflow-master`. Copy it and rename it to `tiny-yolo-voc-1c.cfg` (1c means you only have 1 class to detect) or anyname you like.  
+
+2. Open the `tiny-yolo-voc-1c.cfg`, chage the last [region] layer `class=20` to the number of classes you are going to train for. In our case, we change it to `class=1`.  
+
+3. Go to the [convolutional] layer (the second to last layer) to num * (classes + 5). In our case, num is 5 and classes are 1 so 5 * (1 + 5) = 30 therefore filters are set to 30. `filters=30`.  
+
+4. Go to the `D:\darkflow-master` find `labels.txt`, change the content to the name of your classes' name. 
+In our case, we write `Matt_Damon` and save it.  
+
+5. Go to https://pjreddie.com/darknet/yolo/ and download Tiny YOLO weights https://pjreddie.com/media/files/yolov2-tiny.weights
+and put it into the bin folder.
+
+6. In the `D:\darkflow-master` directory open cmd. And type`python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
