@@ -2,6 +2,7 @@ For YOLO + OpenCV method
 ======
 Requirements:  
 ***Tensorflow and OpenCV***  
+You also need Cython: `pip install Cython`  
 1. download Darkflow repository: https://github.com/thtrieu/darkflow unzip the files to a directory you like  
 2. build the `darkflow` as an usable library:   
         *open a command prompt **-->**  
