@@ -10,7 +10,7 @@ You may get error like this:
 to fix this go to the utils/label_map_util.py change `from object_detection.protos import string_int_label_map_pb2` to `from protos import string_int_label_map_pb2`  
 or an error like this:  
 `from object_detection.core import standard_fields as fields ModuleNotFoundError: No module named 'object_detection'`
-to fix this go to the protos/visualiztion_utils.py change `from object_detection.core import standard_fields as fields` to `from core import standard_fields as fields`  
+to fix this go to the /utils/visualiztion_utils.py change `from object_detection.core import standard_fields as fields` to `from core import standard_fields as fields`  
 This is due to upgraded version, the directory of certain files got changed  
 I will change the "webcam_detection.py" later
 
