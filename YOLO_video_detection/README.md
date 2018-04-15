@@ -1,5 +1,9 @@
 For YOLO + OpenCV method
 ======
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/8333665/38775463-38e9e824-4051-11e8-9e32-33bdfb890508.gif">
+</p>
+
 Requirements:  
 ***Tensorflow and OpenCV***  
 You also need Cython: `pip install Cython`  
